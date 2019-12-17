@@ -1,0 +1,22 @@
+/* Styles */
+
+@import 'fonts.css';
+@import 'shower/shower.css';
+@import 'blocks/badge.css';
+@import 'blocks/caption.css';
+@import 'blocks/progress.css';
+@import 'blocks/region.css';
+@import 'slide/slide.css';
+
+.shower_exit {
+    text-align: center;
+}
+
+.shower_exit a {
+    display: inline-block;
+    color: #585a5e;
+    font: bold 50px/1 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+    padding-top: 20%;
+}
+

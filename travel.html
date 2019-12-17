@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<title>Куда сходить</title>
+        <meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500, 600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+    </head>  
+    <body>
+		<div class="menu-btn">
+			<span></span>
+		</div>
+		<div class="side-menu">
+			<ul>
+                <div class="ext-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О городе</a></li>
+                <li><a href="history.html">Презентация</a></li>
+                <li><a href="food.html">Где поесть</a></li>
+                <li><a href="travel.html">Куда сходить</a></li>
+			</ul>
+		</div>
+		<main>
+			<section class="travel">
+                <div class="travel_left nature"></div>
+                <div class="travel_right">
+                    <div class="travel_text">
+                        <h3>Природа Красноярска</h3>
+                        <p>Скалы, озера, реки – все это в изобилии представлено в природе Красноярского края. Богат регион и различными заповедниками и парками. Самый известный – это заповедник «Столбы», расположенный в столице края.</p>
+                        <p>Помимо «Столбов», есть в Красноярском крае Саяно-Шушенский заповедник. Как следует из названия, он расположен на территории Шушенского района, а создан был, чтобы суметь сохранить популяцию соболя.</p>
+                        <p>наибольшей популярностю пользуются Красноярские столбы, Мининские столбы, Бобровый лог, река Енисей, река Мана, голубые озера Шарыповского района. Если отъехать от города на несколько сотен километров, то можно посетить такие парки, как Ергаки и Борус.</p>
+                        <a href="#">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <section class="travel theatre">
+                <div class="travel_left">
+                    <div class="travel_text">
+                        <h3>Театры Красноярска</h3>
+                        <p>Красноярск — крупнейший культурный и театральный центр Восточной Сибири.</p>
+                        <p>В городе имеются следующие театры:</p>
+                        <ul>
+                            <li>Красноярский государственный театр оперы и балета имени Д. А. Хворостовского</li>
+                            <li>Красноярский драматический театр имени А. С. Пушкина</li>
+                            <li>Красноярский музыкальный театр</li>
+                            <li>Красноярский государственный театр юного зрителя</li>
+                            <li>Красноярский краевой театр кукол</li>
+                            <li>Красноярская краевая филармония</li>
+                            <li>Учебный театр театрального факультета Красноярского государственного института искусств</li>
+                        </ul>
+                        <a href="#">Читать далее</a>
+                    </div>
+                </div>
+                <div class="travel_right theatre">
+                </div>
+			</div>
+		</main>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+		<script id="rendered-js">
+			$(".menu-btn").click(function() {
+				$(".menu-btn").toggleClass("open");
+				$(".side-menu").toggleClass("open");
+			});
+            $(".ext-btn").click(function() {
+				$(".menu-btn").removeClass("opem");
+				$(".side-menu").removeClass("open");
+			});
+		</script>
+    </body>
+</html>

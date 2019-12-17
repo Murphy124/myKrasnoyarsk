@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<title>О городе</title>
+        <meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500, 600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+    </head>  
+    <body>
+		<div class="menu-btn">
+			<span></span>
+		</div>
+		<div class="side-menu">
+			<ul>
+                <div class="ext-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О городе</a></li>
+                <li><a href="history.html">Презентация</a></li>
+                <li><a href="food.html">Где поесть</a></li>
+                <li><a href="travel.html">Куда сходить</a></li>
+			</ul>
+		</div>
+		<main>
+			<div class="about_city">
+                <div class="about_city_left">
+                    <div class="about_city_text">
+                        <h3>Красноярск</h3>
+                        <p>Административный центр Красноярского края (второго по площади субъекта Российской Федерации) и городского округа город Красноярск. Центр Восточно-Сибирского экономического района. Красноярск неофициально именуют столицей Сибири.</p>
+                        <p>Основанный в 1628 году, является крупнейшим из старинных городов Сибири. Во времена «золотой лихорадки» долгое время был крупным процветающим купеческим центром Сибири. Самый восточный город-миллионер в России.</p>
+                        <p>Город расположен в центре России, на обоих берегах Енисея на стыке Западносибирской равнины, Среднесибирского плоскогорья и Саянских гор в ущелье, образованном самыми северными отрогами Восточного Саяна.</p>
+                        <p>Население города — 1 095 286 (2019) человек. В Красноярской агломерации проживает более полутора миллионов жителей.</p>
+                    </div>
+                </div>
+                <div class="about_city_right"></div>
+			</div>
+		</main>
+		<footer>
+			<p>Разработка - Денис Порсев</p>
+		</footer>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+		<script id="rendered-js">
+			$(".menu-btn").click(function() {
+				$(".menu-btn").toggleClass("open");
+				$(".side-menu").toggleClass("open");
+			});
+            $(".ext-btn").click(function() {
+				$(".menu-btn").removeClass("opem");
+				$(".side-menu").removeClass("open");
+			});
+		</script>
+    </body>
+</html>
