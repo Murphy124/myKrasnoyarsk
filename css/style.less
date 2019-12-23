@@ -210,4 +210,50 @@ div.card.show {
   }
 }
 
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%,-50%);
+  overflow: auto;
+  background-color: #ffffff;
+  z-index: 1000;
 
+  span {
+    background-color: #ffffff;
+  }
+
+  a {
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    border: 3px solid #3F3F3F;
+    padding: 8px 20px;
+    margin-top: 25px;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+}
+.modal .modal_content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
